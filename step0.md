@@ -1,4 +1,4 @@
-# 環境設定
+# 環境について
 ## 技術スタック概要
 - Scala
 - Akka HTTP
@@ -21,6 +21,7 @@ JVM上で動くこともあり、Javaとの親和性の非常に高いです。
 
 Scalaの実行にはJava 1.8が必要です。
 今回はDockreコンテナにそのあたりの実行環境を整えてあるのでそちらに頼りましょう。
+
 ## Akka HTTP
 Akka HTTPはLightbend社によって開発されている、Scala/Java用のHTTP toolkitです。
 ScalaでのHTTP serverを作る時にこのツールキットは非常に強力な助けをしてくれます。
@@ -28,11 +29,28 @@ ScalaでのHTTP serverを作る時にこのツールキットは非常に強力�
 ## MySQL
 MySQLはオープンソースで提供されているデータベース(RDBMS)の一つです。
 多くのwebサイトやアプリケーションで採用されている実績をもち、安定してメンテナスがされています。
+CyberBuzz社でもほとんどのアプリケーションで採用されています。
 
 ## Slick
 SlickはScalaのORM(オーアールマッパー)です。
 MySQLをはじめとするデータベースとのデータのやり取りをサポートします。
+このORMのおかげでクエリを直接書くことや、実行時のエラーのクッションなどを柔軟に行うことが可能です。
 
+## 各種公式ドキュメント
+### Scala
+https://docs.scala-lang.org/
+
+### Akka HTTP
+https://doc.akka.io/docs/akka-http/current/index.html
+
+### MySQL
+https://www.mysql.com/jp/
+
+### Slick
+http://slick.lightbend.com/doc/2.1.0/orm-to-slick.html
+
+### Docker
+http://docs.docker.jp/
 
 
 
